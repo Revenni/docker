@@ -1,0 +1,4 @@
+---
+# tasks file for revenni.docker
+
+- include: install_docker.yml
