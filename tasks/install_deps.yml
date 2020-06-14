@@ -1,0 +1,12 @@
+---
+# tasks file for revenni.docker
+
+- name: install deps | packages
+  apt:
+    update_cache: yes
+    pkg:
+    - apt-transport-https
+    - ca-certificates
+    - curl
+    - gnupg-agent
+    - software-properties-common

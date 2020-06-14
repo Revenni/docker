@@ -1,4 +1,5 @@
 ---
 # tasks file for revenni.docker
 
-- include: install_docker.yml
+- include: install_deps.yml
+- include: install_docker_{{ ansible_os_family }}.yml
