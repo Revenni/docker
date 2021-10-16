@@ -3,14 +3,16 @@
 
 - name: install docker | repo key
   apt_key:
-    url: https://download.docker.com/linux/debian/gpg
+    url: https://download.docker.com/linux/ubuntu/gpg
     state: present
 
 - name: install docker | docker repo
-  apt_repository:
-    repo: deb https://download.docker.com/linux/debian buster stable
-    state: present
-    filename: docker
+  template:
+    src: docker_repo.j2
+    dest: /etc/apt/sources.list.d/docker.list
+    mode: '0644'
+    owner: root
+    group: root
 
 - name: install docker | packages
   apt:
