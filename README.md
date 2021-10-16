@@ -39,7 +39,8 @@ MIT
 
 Changelog
 ---------
-10/10/2020 v1.0.1 Fixed ansible var to reflect distribution
+10/15/2021 v1.0.2 Added support for Debian 11 (bullseye)\
+10/10/2020 v1.0.1 Fixed ansible var to reflect distribution\
 06/14/2020 v1.0.0 First release, debian/ubuntu docker base
 
 
